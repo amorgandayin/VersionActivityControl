@@ -1,0 +1,72 @@
+/* Variables & Reset */
+:root {
+    --accent: #E2725B;
+    --dark: #2D2D2D;
+    --cream: #F9F7F2;
+}
+
+body {
+    font-family: 'Inter', sans-serif;
+    color: var(--dark);
+    line-height: 1.7;
+}
+
+h1, h2, h3, .navbar-brand {
+    font-family: 'Playfair Display', serif;
+}
+
+/* Navbar */
+.ls-1 { letter-spacing: 2px; }
+.btn-about {
+    background-color: var(--accent);
+    color: white !important;
+    border-radius: 5px;
+    padding: 8px 20px !important;
+}
+
+/* Hero */
+.hero-wrap {
+    height: 90vh;
+    background: linear-gradient(rgba(0,0,0,0.7), rgba(0,0,0,0.7)), 
+                url('https://images.unsplash.com/photo-1555939594-58d7cb561ad1?auto=format&fit=crop&w=1350&q=80');
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+.tracking-widest { letter-spacing: 5px; }
+
+/* About Section */
+.bg-cream { background-color: var(--cream); }
+.text-accent { color: var(--accent); }
+
+/* Dish Cards */
+.dish-card {
+    background: white;
+    padding: 40px 30px;
+    border: 1px solid #eee;
+    text-align: center;
+    transition: all 0.4s ease;
+    height: 100%;
+}
+
+.dish-card:hover {
+    border-color: var(--accent);
+    transform: translateY(-5px);
+}
+
+.dish-card.active {
+    background: var(--dark);
+    color: white;
+}
+
+.divider {
+    width: 60px;
+    height: 3px;
+    background: var(--accent);
+    margin-top: 15px;
+}
+
+/* Utility */
+.img-fluid {
+    border-radius: 20px;
+}
